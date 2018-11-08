@@ -8,13 +8,14 @@
 
 
 var CONFIG = {
-   customTheme: null, // CUSTOM_THEMES.TRANSPARENT, CUSTOM_THEMES.MOBILE, CUSTOM_THEMES.COMPACT, CUSTOM_THEMES.HOMEKIT, CUSTOM_THEMES.WINPHONE, CUSTOM_THEMES.WIN95
+   customTheme: null, // CUSTOM_THEMES.TRANSPARENT, CUSTOM_THEMES.MATERIAL, CUSTOM_THEMES.MOBILE, CUSTOM_THEMES.COMPACT, CUSTOM_THEMES.HOMEKIT, CUSTOM_THEMES.WINPHONE, CUSTOM_THEMES.WIN95
    transition: TRANSITIONS.ANIMATED_GPU, //ANIMATED or SIMPLE (better perfomance)
    entitySize: ENTITY_SIZES.NORMAL, //SMALL, BIG are available
    tileSize: 150,
    tileMargin: 6,
    serverUrl: "http://localhost:8123",
    wsUrl: "ws://localhost:8123/api/websocket",
+   authToken: null, // optional: make an long live token and put it here
    //googleApiKey: "XXXXXXXXXX", // Required if you are using Google Maps for device tracker
    debug: false, // Prints entities and state change info to the console.
 

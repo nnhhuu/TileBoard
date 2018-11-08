@@ -33,7 +33,7 @@ Should you have any ideas or questions please post them on home-assistant forum 
 ```js
 var CONFIG = {
    /* customTheme: specify a custom theme for your dashboard
-    * Valid options: null, CUSTOM_THEMES.TRANSPARENT, CUSTOM_THEMES.MOBILE, CUSTOM_THEMES.COMPACT, CUSTOM_THEMES.HOMEKIT, CUSTOM_THEMES.WINPHONE, CUSTOM_THEMES.WIN95 or a custom theme you have created
+    * Valid options: null, CUSTOM_THEMES.TRANSPARENT, CUSTOM_THEMES.MATERIAL, CUSTOM_THEMES.MOBILE, CUSTOM_THEMES.COMPACT, CUSTOM_THEMES.HOMEKIT, CUSTOM_THEMES.WINPHONE, CUSTOM_THEMES.WIN95 or a custom theme you have created
     * Default: null. Array supported
     */
    customTheme: null,
@@ -62,6 +62,10 @@ var CONFIG = {
     * If HomeAssistant is behind SSL, replace ws:// with wss://
     */
    wsUrl: 'ws://hassio.local:8123/api/websocket',
+   
+   /* authToken: Optional Long live token that you can create in your HomeAssistant
+    */
+   authToken: null,
 
    /* debug: Toggle for extra debugging information.
     * If enabled, will print info about state changes and entities to console.
